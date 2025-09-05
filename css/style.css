@@ -1,0 +1,181 @@
+
+
+body{
+    background-color: rgb(5, 25, 38);
+}
+
+h1{
+    color: darkcyan;
+    text-align: center;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#primary{
+    color:darkcyan;
+    background-color: darkslategray;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: middle;        
+    min-height: 100vh;          
+    margin: 0;    
+    padding: 0;              
+}
+ 
+
+.forminput{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    position: relative; 
+}
+
+#todo{
+  flex: 1;
+  margin-left: auto;
+  padding: 11px 17px;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  border-radius: 22px;
+  background: rgb(255, 255, 255);
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+#waktu {
+  flex: 1;
+  margin-left: 20px;
+  height: 20px;
+  padding: 10px 12px;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  border-radius: 22px;
+  background: rgb(255, 255, 255);
+  color: #000000;
+  font-size: 0.9rem;
+  
+}
+
+.container{
+    background: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(10px);   
+    position: flex;
+    top: 20px;
+    bottom: 50px;
+    width:auto;
+    margin: auto;
+    border-radius: 56px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.addbutton {
+    width: 50px;
+    height: 35px;
+    margin-left: 15px;
+    background: rgb(16, 104, 119);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+}
+
+.addbutton:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #9BAAE8 0%, #8B9AE6 100%);
+}
+
+.addbutton:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.buttonstyle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    position: relative; 
+}
+
+.filter-btn, .delete-all-btn {
+    position: static; 
+    flex-shrink: 0; 
+}
+
+button {
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.85rem;
+  transition: 0.3s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+thead {
+    background: rgba(20, 31, 49, 0.8);
+}
+
+th {
+    padding: 16px 25px;
+    text-align: left;
+    color: #94a3b8;
+    font-weight: 550;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(71, 85, 105, 0.3);
+}
+
+td {
+    padding: 16px 20px;
+    color: #e2e8f0;
+    border-bottom: 1px solid rgba(71, 85, 105, 0.2);
+}
+
+tbody tr:hover {
+    background: rgba(51, 65, 85, 0.3);
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+tbody td {
+    text-align: center;
+}
+
+
+tbody tr:not(:empty) td {
+    text-align: left;
+}
