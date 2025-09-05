@@ -153,7 +153,7 @@ function filterTodos() {
   });
   
   if (taskRows.length === 0) {
-    alert("No tasks to sort!");
+    alert("Tidak ada task");
     return;
   }
   
